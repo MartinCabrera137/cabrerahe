@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+div.barralateral{
+    position: fixed;
+    width: 200px;
+    background-color: red;
+    height: 100%;
+    overflow: auto;
+    
+
+    font-size:35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+}
+a{
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+}
+a:hover{
+    background-color: black;
+    color: red;
+}
+div.content{
+    position: relative;
+    background-image: url(ImagenDeElmoAsustado.jpg);
+    background-size:cover;
+    background-position:center;
+    margin-left:auto;
+    padding: 1px 1px;
+    height: 1000px;
+    z-index: -2;
+}
+
+
+@media screen and (max-width: 1200px){
+    div.barralateral{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .barralateral a {float: left;};
+
+    div.content{margin-left: 0;}
+
+}
+
+@media screen and (max-width: 600px){
+    .barralateral a{
+        float: none;
+
+        text-align: center;
+    }
+}
