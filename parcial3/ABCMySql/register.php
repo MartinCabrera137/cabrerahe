@@ -19,9 +19,6 @@ include 'code-register.php';
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
                 <label for="">Nombre Completo</label>
                 <input type="text" name="nombre">
-                <span class="msg-error"><?php echo $nombre_error ?></span>
-                <label for="">Usuario</label>
-                <input type="text" name="usuario">
                 <label for="">Contraseña</label>
                 <input type="text" name="contraseña">
                 <input type="summit" value="Registrarse">
