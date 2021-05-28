@@ -10,7 +10,4 @@
          $nombre_error="Por favor escriba el nombre completo";
      }
  }
-
-
-
 ?>
