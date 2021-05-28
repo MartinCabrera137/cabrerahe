@@ -14,11 +14,11 @@
             <img src="../ABCMySql/img/tecnm.png" alt="" class="logo">
             <h1 class="title"> Iniciar sesion </h1>
             <form action="">
-                <label for="">Correo Electronico</label>
-                <input type="text">
+                <label for="">Usuario</label>
+                <input type="text" name ="usuario">
                 <span class="msg-error"></span>
                 <label for="">Contraseña</label>
-                <input type="text">
+                <input type="text" name="contraseña">
                 <span class="msg-error"> </span>
                 <input type="button" value="Iniciar sesion">
             </form>
