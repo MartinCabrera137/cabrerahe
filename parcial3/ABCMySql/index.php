@@ -20,7 +20,7 @@
                 <label for="">Contraseña</label>
                 <input type="text" name="contraseña">
                 <span class="msg-error"> </span>
-                <input type="button" value="Iniciar sesion">
+                <input type="submit" value="Iniciar sesion">
             </form>
             <span class="text-footer">¿No tienes cuenta?
                 <a href="#">Registrarse</a>

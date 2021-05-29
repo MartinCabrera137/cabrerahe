@@ -17,11 +17,16 @@ include 'code-register.php';
             <img src="../ABCMySql/img/tecnm.png" alt="" class="logo">
             <h1 class="title"> Registrarse </h1>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+                <label for="">Usuario</label>
+                <input type="text" name="usuario">               
+                <span class="msg-error"><?php echo $usuario_error ?></span>
                 <label for="">Nombre Completo</label>
                 <input type="text" name="nombre">
+                <span class="msg-error"><?php echo $nombre_error ?></span>
                 <label for="">Contraseña</label>
                 <input type="text" name="contraseña">
-                <input type="summit" value="Registrarse">
+                <span class="msg-error"><?php echo $contraseña_error ?></span>
+                <input type="submit" value="Crear cuenta">
             </form>
             <span class="text-footer">¿Ya tienes cuenta?
                 <a href="#">Inicia Sesion</a>
