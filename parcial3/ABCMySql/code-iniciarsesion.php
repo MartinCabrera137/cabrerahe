@@ -2,7 +2,6 @@
 
     //Aquí iniciarmos la sesion
     session_start();
-
     //si la sesion esta iniciada
     if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"]==true){
         echo "<script>
