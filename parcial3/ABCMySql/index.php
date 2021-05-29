@@ -1,3 +1,6 @@
+<?php
+include "code-iniciarsesion.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,13 +16,13 @@
         <div class="ctn-form">
             <img src="../ABCMySql/img/tecnm.png" alt="" class="logo">
             <h1 class="title"> Iniciar sesion </h1>
-            <form action="">
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method ="post">
                 <label for="">Usuario</label>
                 <input type="text" name ="usuario">
-                <span class="msg-error"></span>
+                <span class="msg-error"><?php echo $usuario_error ?></span>
                 <label for="">Contraseña</label>
                 <input type="text" name="contraseña">
-                <span class="msg-error"> </span>
+                <span class="msg-error"><?php echo $contraseña_error ?> </span>
                 <input type="submit" value="Iniciar sesion">
             </form>
             <span class="text-footer">¿No tienes cuenta?

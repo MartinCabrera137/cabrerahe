@@ -1,3 +1,14 @@
+<?php
+
+    //Aquí iniciarmos la sesion
+    session_start();
+    if(!isset($_SESSION)["loggedin"]) || $_SESSION["loggedin"] !==true){
+        echo "<script>
+        window.location= 'index.php'
+        </script>";
+        exit;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +23,7 @@
 <div class="ctn-welcome">
     <img src="../ABCMySql/img/tecnm.png" alt="" class="logo-welcome">
     <h1 class="title-welcome">¡Bienvenido al sistema!</h1>
-    <a href="#" class="close-sesion">Cerrar sesion</a>
+    <a href="CerrarSesion.php" class="close-sesion">Cerrar sesion</a>
 </div>
 
 </body>

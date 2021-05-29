@@ -1,6 +1,5 @@
 <?php
  require_once "conexion.php";
-
  $nombre=$usuario=$contraseña="";
  $nombre_error=$usuario_error=$contraseña_error="";
  if($_SERVER["REQUEST_METHOD"]=="POST"){
@@ -42,7 +41,7 @@
          if($stmt=mysqli_prepare($link,$sql))
          {
             mysqli_stmt_bind_param($stmt,"s",$parametro_nombre);
-            $parametro_nombre=trim($_POST["nombre"]);
+            $parametro_nombre=trim($_POST["nombre"]);                 
             if(mysqli_stmt_execute($stmt))
             {
                 mysqli_stmt_store_result($stmt);
