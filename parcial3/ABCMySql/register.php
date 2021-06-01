@@ -24,12 +24,12 @@ include 'code-register.php';
                 <input type="text" name="nombre">
                 <span class="msg-error"><?php echo $nombre_error ?></span>
                 <label for="">Contraseña</label>
-                <input type="text" name="contraseña">
+                <input type="password" name="contraseña">
                 <span class="msg-error"><?php echo $contraseña_error ?></span>
                 <input type="submit" value="Crear cuenta">
             </form>
             <span class="text-footer">¿Ya tienes cuenta?
-                <a href="#">Inicia Sesion</a>
+                <a href="Index.php">Inicia Sesion</a>
             </span>
         </div>
 

@@ -81,7 +81,7 @@
             $parametro_contraseña = password_hash($contraseña, PASSWORD_DEFAULT); //encriptar
             if(mysqli_stmt_execute($stmt)){
                 echo "<script>
-                alert('Mensaje');
+                alert('Usuario registrado');
                 window.location= 'index.php'
                 </script>";
             }else{

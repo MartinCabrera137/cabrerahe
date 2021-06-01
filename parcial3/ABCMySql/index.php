@@ -21,12 +21,12 @@ include "code-iniciarsesion.php";
                 <input type="text" name ="usuario">
                 <span class="msg-error"><?php echo $usuario_error ?></span>
                 <label for="">Contraseña</label>
-                <input type="text" name="contraseña">
+                <input type="password" name="contraseña">
                 <span class="msg-error"><?php echo $contraseña_error ?> </span>
                 <input type="submit" value="Iniciar sesion">
             </form>
             <span class="text-footer">¿No tienes cuenta?
-                <a href="#">Registrarse</a>
+                <a href="register.php">Registrarse</a>
             </span>
         </div>
 

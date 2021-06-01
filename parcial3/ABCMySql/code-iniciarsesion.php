@@ -2,11 +2,9 @@
 
     //Aquí iniciarmos la sesion
     session_start();
-    //si la sesion esta iniciada
     if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"]==true){
         echo "<script>
-        alert('Ya hay una sesion iniciada');
-        window.location= 'index.php'
+        window.location= 'Home.php'
         </script>";
         exit;
     }
@@ -49,12 +47,11 @@
                     session_start();
                     //Almecenar los datos en variables de sesion
                     $_SESSION["loggedin"] = true;
-                    $_SESSION["id"] = $id;
+                    $_SESSION["nombre"] = $nombre;
                     $_SESSION["usuario"] = $usuario;
 
                     //Entrar al sistema
                     echo "<script>
-                    alert('Iniciando sesion');
                     window.location= 'Home.php'
                     </script>";
                     }
@@ -62,19 +59,20 @@
                         $contraseña_error ="Contraseña incorrecta";
                     }
                 }
-                else
-                {
-                $usuario_error = "Usuario no registrado";
-                }
-            }
-            else{
-                echo "<script>
-                alert('Algo salió mal');
-                </script>";
-            }
+               
+            }     
+            else
+            {
+            $usuario_error = "Usuario no registrado";
+            }    
+        }
+        else{
+            echo "<script>
+            alert('Algo salió mal');
+            </script>";
         }
         }
-       
+        
         mysqli_close($link);
     }
 ?>
