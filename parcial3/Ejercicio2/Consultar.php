@@ -13,11 +13,11 @@ try {
      print "<h3>Registros de la tabla Estudiantes</h3>";
      for ($i=0; $i<=count($resultado)-1; $i++) {
         printf("<b>Registro numero: </b>".($i+1)."<br>");
-        printf("<b>Nombre     = </b> ".$resultado[0]['Nombre']."<br>");
-        printf("<b>Numero Control  = </b> ".$resultado[0]['NControl']."<br>");
-        printf("<b>Telefono  = </b> ".$resultado[0]['Telefono']."<br>");
-        printf("<b>Correo Electronico      = </b> ".$resultado[0]['Email']."<br>");
-        printf("<b>Carrera      = </b> ".$resultado[0]['Carrera']."<br>");
+        printf("<b>Nombre     = </b> ".$resultado[$i]['Nombre']."<br>");
+        printf("<b>Numero Control  = </b> ".$resultado[$i]['NControl']."<br>");
+        printf("<b>Telefono  = </b> ".$resultado[$i]['Telefono']."<br>");
+        printf("<b>Correo Electronico      = </b> ".$resultado[$i]['Email']."<br>");
+        printf("<b>Carrera      = </b> ".$resultado[$i]['Carrera']."<br>");
         printf("</pre>");
         printf("<br>");
      }
