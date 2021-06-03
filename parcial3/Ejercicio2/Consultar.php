@@ -2,22 +2,28 @@
 include "conexion.php";
 
 try {
-       $queryStr="select * from Usuarios";
-       $query=$con->prepare($queryStr);
-       $query->execute();
+        $consultaSql = "select * from Estudiantes";
+    $consulta = $link -> prepare($consultaSql);
+    $consulta -> execute();
+    $resultado = $consulta->fetchAll(PDO::FETCH_ASSOC);
 
-        while ($row = $query->fetch()) {
-            echo $row['Nombre'].'-'.
-                 $row['NControl'].'-'.
-                 $row['Telefono'].'-'.
-                 $row['Email'].'-'.
-                 $row['Carrera'].'-'.
-                 $row['Contraseña'].'<br>';
-        }
-        $query->closeCursor();
 
+    //Recorrer la tabla para imprimir todo
+    //--------------------------------------
+     print "<h3>Registros de la tabla Estudiantes</h3>";
+     for ($i=0; $i<=count($resultado)-1; $i++) {
+        printf("<b>Registro numero: </b>".($i+1)."<br>");
+        printf("<b>Nombre     = </b> ".$resultado[0]['Nombre']."<br>");
+        printf("<b>Numero Control  = </b> ".$resultado[0]['NControl']."<br>");
+        printf("<b>Telefono  = </b> ".$resultado[0]['Telefono']."<br>");
+        printf("<b>Correo Electronico      = </b> ".$resultado[0]['Email']."<br>");
+        printf("<b>Carrera      = </b> ".$resultado[0]['Carrera']."<br>");
+        printf("</pre>");
+        printf("<br>");
+     }
+    $consulta->closeCursor();
 } catch(PDOException $e) {
-        echo "Error de consulta a la base de datos";
+        echo "Entro al catch ";
         echo $e->getMessage();
 }
 ?>

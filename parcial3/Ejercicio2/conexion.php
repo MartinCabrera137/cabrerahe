@@ -1,12 +1,17 @@
 <?php
-define('DB_SERVER','localhost');
-define('DB_USERNAME','root');
-define('DB_PASSWORD','');
-define('DB_NAME','login');
+$hostname='localhost';
+$database='Cabrerahe';
+$username='root';
+$password='';
 
-$link=mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
-if($link===false){
-    die("Problemas con la conexion" . mysqli_conect_error());
+try {
+      $link = new PDO("mysql:host=$hostname;dbname=$database",$username,$password);
+} catch(PDOException $e) {
+      echo "Error de conexion a la base de datos";
+      echo $e->getMessage();
+      exit();
 }
+
+$link->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
 ?>
