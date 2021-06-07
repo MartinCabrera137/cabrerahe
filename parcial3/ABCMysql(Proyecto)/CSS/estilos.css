@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: nome;
+}
+body{
+    background: black;
+    padding: 100px;
+}
+.container all{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 10px;
+
+}
+.ctn form{
+    width: 80%;
+    padding: 40px;
+    background: cornsilk;
+}
+
+.logo{
+    width: 150px;
+    display: block;
+    margin: auto;
+    margin-top: 1px;
+}
+.title{
+    text-align: center;
+    margin-top: 20px  ;
+    font-weight: 300;
+    color: darkgray;
+}
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    color: darkgray;
+}
+input[type="text"],
+input[type="password"]{
+    width:100% ;
+    height: 30px;
+    background: #ffffff00;
+    border: 0px;
+    outline: 0px;
+    border-bottom: 1px solid white;
+    color: darkgreen;
+    font-size: 20px;
+}
+
+input[type="submit"]{
+    width:100% ;
+    height: 50px;
+    margin-top: 40px;
+    color: darkgrey;
+    border: 0px;
+    background: darkgreen;
+    font-weight: 300 ;
+    cursor: pointer;
+    font-size: 25px;
+}
+input[type="submit"]:hover{
+    background: green;
+}
+
+.text-footer{
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    color: darkgray;
+    font-weight: 300;
+
+}
+
+.text-footer a{
+    color: darkgreen;
+    font-weight: 500;
+}
+
+
+.msg-error{
+    color: red;
+    display: block;
+    margin-top: 10px;
+    
+}
+
+.ctn-welcome{
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding:auto;
+    margin: auto;
+    margin-top: 50px;
+    background: black;
+
+    color: white;
+}
+.logo-welcome{
+    width: 150px;
+    margin: auto;
+    display: block;
+}
+.title-welcome{
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.close-sesion{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 40px;
+    display: block;
+    padding: 20px;
+    background: green;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+.close-sesion:hover{
+    background: darkgreen;
+}
+
+
+/*Parametros para hacerlo responsivo*/
+@media  screen and (max-width: 800px) {
+    .ctn-text{
+        display: none;
+    }
+    .ctn-form{
+        margin: auto;
+        width: 100%;
+        background: black;
+    }
+}
+
+
+
