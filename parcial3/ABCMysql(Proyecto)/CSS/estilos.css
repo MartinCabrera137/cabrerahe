@@ -17,6 +17,7 @@ body{
     margin-top: 10px;
 
 }
+
 .ctn form{
     width: 80%;
     padding: 40px;
@@ -119,13 +120,60 @@ input[type="submit"]:hover{
     margin-top: 40px;
     display: block;
     padding: 20px;
-    background: green;
+    background: red;
     color: white;
     font-size: 20px;
     font-weight: 300;
 }
 .close-sesion:hover{
     background: darkgreen;
+}
+
+.btnconsultas{
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 40px;
+    display: block;
+    padding: 20px;
+    background: green;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+.btnconsultas{
+    background: darkgreen;
+}
+
+/*CSS para la tabla donde voy a hacer las consultas*/
+table{
+    
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 20px;
+    
+}
+
+thead{
+	background-color: darkgreen;
+	border-bottom: solid 5px darkgreen;
+	color: white;
+ 
+}
+
+tr:nth-child(even){
+   
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color:green;
+	color: white;
 }
 
 
@@ -140,6 +188,3 @@ input[type="submit"]:hover{
         background: black;
     }
 }
-
-
-

@@ -14,7 +14,7 @@ include "code-iniciarsesion.php";
 <body>
     <div class="container-all">
         <div class="ctn-form">
-            <img src="../ABCMySql/img/tecnm.png" alt="" class="logo">
+            <img src="img/tecnm.png" alt="" class="logo">
             <h1 class="title"> Iniciar sesion </h1>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method ="post">
                 <label for="">Usuario</label>

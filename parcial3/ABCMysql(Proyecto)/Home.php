@@ -20,9 +20,13 @@
 </head>
 <body>
 <div class="ctn-welcome">
-    <img src="../ABCMySql/img/tecnm.png" alt="" class="logo-welcome">
+    <img src="img/tecnm.png" alt="" class="logo-welcome">
     <h1 class="title-welcome">¡Bienvenido al sistema!</h1>
     <h1 class="title-welcome"><?php echo $_SESSION['nombre'] ?></h1>
+    <a href="Consultar.php" class="btnconsultas">Buscar Estudiantes<a>
+    <a href="Insert.php" class="btnconsultas">Insertar Estudiantes</a>
+    <a href="CerrarSesion.php" class="btnconsultas">Modificar Datos</a>
+    <a href="CerrarSesion.php" class="btnconsultas">Eliminar</a>
     <a href="CerrarSesion.php" class="close-sesion">Cerrar sesion</a>
 </div>
 
