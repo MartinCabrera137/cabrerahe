@@ -14,11 +14,12 @@ include "code-consultar.php";
 <body>
     <div class="container-all">  
         <div class="ctn-form">
-            <img src="img/tecnm.png" alt="" class="logo">
+            <img src="img/tecnm.png" alt="" class="logo">       
+            
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">       
                 <label for="">Buscar Estudiante:</label>
                 <input type="text" name ="BuscarEstudiante">
-                <span class="msg-error"><?php echo $NControl_error ?> </span>             
+                <span class="msg-error"><?php echo $NControl_error ?> </span>                       
             </form>
         <div>
         <span class="text-footer">

@@ -2,8 +2,8 @@
  require_once "conexion.php";
  $NControl=$Nombres=$Apellidos=$Carrera="";
  $NControl_error=$Nombres_error=$Apellidos_error=$Carrera_error="";
- if($_SERVER["REQUEST_METHOD"]=="POST"){
-    
+ 
+ 
       $salida = "";
 
                 $query = "SELECT * FROM estudiantes WHERE Nombres NOT LIKE '' ORDER By NControl LIMIT 25";
@@ -49,5 +49,5 @@
                 echo $salida;
             
                 $link->close();
- }
+ 
 ?>
