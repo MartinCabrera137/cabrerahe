@@ -12,31 +12,47 @@ include "code-actualizar.php";
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, maximun-scale=1.0">
 </head>
 <body>
-    <div class="container-all">  
+    <div class="container-all">
         <div class="ctn-form">
-            <img src="img/tecnm.png" alt="" class="logo">  
-                 
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">       
-            <label for="">Buscar Estudiante:</label>
-            <input type="text" name ="BuscarEstudiante">
-            <span class="msg-error"><?php echo $NControl_error ?> </span>        
-              
-            </form>
-                
-        <div>
-              
+            <img src="img/tecnm.png" alt="" class="logo">
+            <h1 class="title"> Actualizar estudiante </h1>
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method ="POST">
+           <!--  Buscar el usuario al dar enter en el txt de busqueda -->
+                <label for="">Buscar estudiante con su numero de control:</label>
+                <input type="text" name ="BuscarEstudiante">     
+                <span class="msg-error"><?php echo $Busqueda_error ?> </span>         
+     
 
-    <span class="text-footer">
-    <a href="Home.php">Regresar al inicio</a>  
-    <label for=""></label>
-    <label for=""></label>
-    </span>  
-    
+            <label for=""></label>
+            <label for=""></label>
+        
+           <!--  Actualizar al usuario usando los datos que metí a los txt -->
 
+                <input type="text" name ="NControl"  placeholder = "Numero de Control" value = <?php echo $NControl ?>>
+                <span class="msg-error"><?php echo $NControl_error ?> </span>
+
+        
+                <input type="text" name ="Nombres"  placeholder = "Nombres" value = <?php echo $Nombres ?> >
+                <span class="msg-error"><?php echo $Nombres_error ?> </span>
+
+           
+                <input type="text" name ="Apellidos"  placeholder = "Apellidos" value = <?php echo $Apellidos ?>>
+                <span class="msg-error"><?php echo $Apellidos_error ?> </span>
+
+
+                <input type="text" name ="Carrera" placeholder = "Carrera" value = <?php echo $Carrera ?>>                
+                <span class="msg-error"><?php echo $Carrera_error ?> </span>
     
-    
-    
+                <input type="submit" value="Actualizar" name="ActualizarEstudiante" >   
+            </form>      
+
+            <span class="text-footer">
+            <a href="Home.php">Regresar al inicio</a>
+            </span>
+        </div>
+
     </div>
-   
 </body>
 </html>
+
+
