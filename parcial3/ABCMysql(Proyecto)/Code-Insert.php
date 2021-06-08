@@ -2,9 +2,10 @@
  require_once "conexion.php";
  $NControl=$Nombres=$Apellidos=$Carrera="";
  $NControl_error=$Nombres_error=$Apellidos_error=$Carrera_error="";
+ 
+ 
+ 
  if($_SERVER["REQUEST_METHOD"]=="POST"){
-    
-    
     //Input de NControl (listo)
       if(empty(trim($_POST["NControl"])))
       {

@@ -4,7 +4,7 @@
     session_start();
     if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"]==true){
         echo "<script>
-        window.location= 'Formas/Home.php'
+        window.location= 'Home.php'
         </script>";
         exit;
     }
@@ -52,7 +52,7 @@
 
                     //Entrar al sistema
                     echo "<script>
-                    window.location= 'Formas/Home.php'
+                    window.location= 'Home.php'
                     </script>";
                     }
                     else{

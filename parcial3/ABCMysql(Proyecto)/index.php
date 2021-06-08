@@ -1,5 +1,5 @@
 <?php
-include "Code/code-iniciarsesion.php";
+include "code-iniciarsesion.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +26,7 @@ include "Code/code-iniciarsesion.php";
                 <input type="submit" value="Iniciar sesion">
             </form>
             <span class="text-footer">¿No tienes cuenta?
-                <a href="Formas/register.php">Registrarse</a>
+                <a href="register.php">Registrarse</a>
             </span>
         </div>
 
